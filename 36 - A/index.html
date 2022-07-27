@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>DOOM</title>
+
+    <link rel="stylesheet" href="index.css">
+    
+    <script src="Property.js"></script>
+    <script src="App.js"></script>
+    <script src="index.js"></script>
+</head>
+
+<body>
+    <form onsubmit="app.start()">
+        <legend>Property Registration Form</legend>
+
+        <fieldset>
+            <p>
+                <label for="property-type">Type: </label>
+                <select id="property-type">
+                    <option value="House">House</option>
+                    <option value="Appartament">Appartament</option>
+                </select>
+            </p>
+            <p>
+                <label for="property-area">Area: </label>
+                <input type="text" id="property-area" maxlength="15">
+            </p>
+            <p>
+                <label for="property-disponibility">Disponibility: </label>
+                <input type="checkbox" id="property-disponibility" name="property-disponibility-radio">
+            </p>
+            
+            <button type="submit">Send</button>
+            <button type="button" onclick="app.cleanForm()">Clear</button>
+        </fieldset>
+    </form>
+
+    <section class="properties-section">
+
+    </section>
+</body>
+
+</html>

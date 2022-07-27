@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Events</title>
+
+    <script src="events.js"></script>
+</head>
+
+<body>
+    <p>
+        <button onclick="onClickMe()">Click here</button>
+    </p>
+
+    <p>
+        Focus
+        <input type="text" onfocus="onFocusMe()">
+    </p>
+
+    <p>
+        Blur
+        <input type="text" onblur="onBlurMe()">
+    </p>
+
+    <p>
+        Change
+        <input type="text" onchange="onChangeMe()">
+    </p>
+
+    <p onmouseover="onOverMe()">Hover the mouse over</p>
+    
+</body>
+
+</html>
